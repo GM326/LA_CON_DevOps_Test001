@@ -85,6 +85,5 @@ stages:
                     csmFile: $(Agent.WorkFolder)\1\${{ variables.artifactName }}\LogicAppsATN\LA_test001.bicep
                     overrideParameters: >
                       -logic_app_name $(logicappName)
-                      -cosmosdb_account_name $(cosmosAccountName)
                       -location ${{ variables.location }}
                     deploymentMode: 'Incremental'
